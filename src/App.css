@@ -28,11 +28,22 @@ body {
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
   position: sticky;
   top: 0;
+  z-index: 1000;
 }
 
 .navbar-user {
   font-size: 1rem;
   font-weight: 500;
+  color: white;
+  margin-right: 40px;
+}
+
+.mode-toggle-button{
+    font-size: 1rem;
+  font-weight: 500;
+  color: white;
+  margin-right: 100px;
+
 }
 
 .logout-button {
@@ -466,6 +477,66 @@ form button:hover {
   text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
 }
 
+
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(to right, #2193b0, #6dd5ed);
+}
+
+.login-box {
+  background-color: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  width: 400px;
+}
+
+.login-heading {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.auth-input {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+  border: 1px solid #aaa;
+  border-radius: 6px;
+}
+
+.auth-button,
+.google-button {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 6px;
+  color: white;
+  cursor: pointer;
+}
+
+.auth-button {
+  background-color: #007bff;
+}
+
+.google-button {
+  background-color: #db4437;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.google-logo {
+  width: 20px;
+  margin-right: 10px;
+}
+
+
 @keyframes shimmer {
   0% {
     background-position: 0% 50%;
@@ -674,4 +745,77 @@ form button:hover {
     align-items: center;
     text-align: center;
   }
+}
+
+.dashboard {
+  max-width: 1000px;
+  margin: 2rem auto;
+  padding: 1.5rem;
+  background-color: var(--navbar-bg);
+  box-shadow: 0 4px 20px var(--shadow-color);
+  border-radius: 12px;
+}
+
+.filters {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-bottom: 1rem;
+  align-items: center;
+}
+
+.filters select,
+.filters input[type="date"] {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+.expense-list {
+  display: grid;
+  gap: 0.8rem;
+  margin-top: 1rem;
+}
+
+.expense-item {
+  background: #f1f1f1;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px var(--shadow-color);
+}
+
+.filter-bar {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.export-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.export-buttons button {
+  background-color: var(--secondary-color);
+}
+
+.export-buttons button:hover {
+  background-color: var(--accent-color);
+}
+
+/* Toast customization */
+.Toastify__toast--info {
+  background: var(--secondary-color);
+}
+.Toastify__toast--success {
+  background: var(--primary-color);
+}
+.Toastify__toast--error {
+  background: #e74c3c;
+}
+.Toastify__toast--warning {
+  background: #f39c12;
 }

@@ -37,6 +37,8 @@ function ExpenseForm({ user }) {
         <option>Food</option>
         <option>Transport</option>
         <option>Shopping</option>
+        <option value="Groceries">Groceries</option>
+        <option value="Bills">Bills</option>
         <option>Other</option>
       </select>
       <input
