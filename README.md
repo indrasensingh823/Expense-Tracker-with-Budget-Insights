@@ -2,9 +2,17 @@
 
 PrecisionSpend is a powerful and minimal expense tracker web application built with **React** and **Firebase**, designed to help users manage and visualize their daily spending with features like category/date filtering, real-time charts, PDF/CSV export, and dark/light mode.
 
+
+## App Screenshot
+
+Here is a preview of the PrecisionSpend Expense Tracker:
+
+###  Authentication Page
 ![Image](https://github.com/user-attachments/assets/7bef0524-994a-45f8-99d6-e3a90ec3c990)
 
+###  Dashboard View
 ![Image](https://github.com/user-attachments/assets/7bd3c8ee-3e0e-4b82-866b-dddb90fdae25)
+
 
 ---
 
@@ -28,7 +36,7 @@ PrecisionSpend is a powerful and minimal expense tracker web application built w
 - **Backend**: Firebase Auth + Firestore
 - **Charts**: Chart.js (via `react-chartjs-2`)
 - **Export**: jsPDF & AutoTable, Blob CSV export
-- **Currency API**: [ExchangeRate-API](https://www.exchangerate-api.com)
+
 
 ---
 
